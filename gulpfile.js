@@ -35,7 +35,7 @@ function cssbuild(done) {
     )
     .pipe(
       purgecss({
-        content: ["index.html"],
+        content: ["index.html", "js/app.js"],
       })
     )
     .pipe(dest("build/css"));
